@@ -10,6 +10,12 @@ public class PlayerController : MonoBehaviour
     public float zMin = -10.0f;
     public float zMax = 10.0f;
 
+    public GameObject shot;
+    public Transform shotTransform;
+
+    public float fireRate = 0.5f;
+    private float nextFire = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +41,14 @@ public class PlayerController : MonoBehaviour
             Mathf.Clamp(r.position.x, xMin, xMax),
             r.position.y,
             Mathf.Clamp(r.position.z, zMin, zMax));
+
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(
+                shot,
+                shotTransform.position,
+                shotTransform.rotation);
+        }
     }
 }
