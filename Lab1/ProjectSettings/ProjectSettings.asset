@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 24d353df2fcc54955aae591a692dae1a
+  productGUID: 30264232155d04ef19b4b0894b6b6cca
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -611,9 +611,9 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 99614cdb-eea9-442c-920b-c636f28a87df
+  cloudProjectId: ba5e6849-b684-491e-8361-ade3351e3656
   framebufferDepthMemorylessMode: 0
-  projectName: Lab1
+  projectName: Lab1 (1)
   organizationId: kuldr
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
