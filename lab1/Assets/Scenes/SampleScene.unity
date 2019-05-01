@@ -189,6 +189,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78de9a5696ee4bb1aec8667c64cceb9, type: 3}
+--- !u!1 &337500086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337500087}
+  m_Layer: 0
+  m_Name: ShotTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337500087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337500086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1256537772}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +415,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1256537772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4d9d46cfe7d134f87ab3b98686db3632,
+    type: 3}
+  m_PrefabInstance: {fileID: 1531458151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1256537773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +438,9 @@ MonoBehaviour:
   xMax: 5
   zMin: -5
   zMax: 5
+  shot: {fileID: 9129044957035457598, guid: 6bcc926e18601431c85b7114eba0201b, type: 3}
+  shotTransform: {fileID: 337500087}
+  fireRate: 0.5
 --- !u!1001 &1531458151
 PrefabInstance:
   m_ObjectHideFlags: 0
