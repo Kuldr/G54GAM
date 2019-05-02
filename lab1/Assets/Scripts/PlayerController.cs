@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -49,5 +50,11 @@ public class PlayerController : MonoBehaviour
                 shotTransform.position,
                 shotTransform.rotation);
         }
+    }
+
+    private void OnDestroy()
+    {
+        //Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
