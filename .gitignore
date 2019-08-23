@@ -1,5 +1,7 @@
 *.DS_Store
 
+*video/
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
